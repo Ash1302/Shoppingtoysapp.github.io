@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variabales.scss';
+body{ font-family: Verdana, Geneva, Tahoma, sans-serif; color:$gray; font-size:$size12;}
+h6, .title{font-weight:$bold;font-size:$size14;}
+
+.btn{padding: 2px 10px;border-radius:16px;color: $white; font-size:$size12;}
+.renage-block{ margin-top: 40px;}
+
+.btn_orng{background-color:$orange; color:$dgray;}

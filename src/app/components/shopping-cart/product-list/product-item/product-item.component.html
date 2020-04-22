@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="productItem.imageUrl" width="100%" height="150">
+    <h6>{{ productItem.name }}</h6>
+    <span class="price"> <strong>{{ productItem.price | currency:'INR' }}</strong></span>
+    <span class="dis">{{productItem.discount}} % off</span>
+    <!--slice is mo char limit-->
+    <p>{{ productItem.description | slice: 0:45}}...</p>
+    <p><button class="btn btn_orng" (click)="handleAddToCart()">Add to Cart</button></p>
+</div>

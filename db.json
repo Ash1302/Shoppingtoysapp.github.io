@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Kitchen set",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "imageUrl": "https://5.imimg.com/data5/SU/CQ/MY-45782465/baby-kids-kitchen-toys-set-500x500.jpg",
+      "price": 300,
+      "discount": 40
+    },
+    {
+      "id": 2,
+      "name": "Car",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81lGCHQjZYL._SL1500_.jpg",
+      "price": 200,
+      "discount": 40
+    },
+    {
+      "id": 3,
+      "name": "Dorne",
+      "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+      "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+      "price": 100,
+      "discount": 40
+    },
+    {
+      "id": 4,
+      "name": "Tou Hourse",
+      "description": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41xo3skXrsL._SS600_.jpg",
+      "price": 400,
+      "discount": 40
+    },
+    {
+      "id": 5,
+      "name": "Piano",
+      "description": "combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
+      "imageUrl": "https://sc01.alicdn.com/kf/HTB1BX9Ic50TMKJjSZFNq6y_1FXaU.jpg_350x350.jpg",
+      "price": 600,
+      "discount": 40
+    },
+    {
+      "id": "Robert",
+      "name": "1",
+      "description": "combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
+      "imageUrl": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572027183-best-kids-toys-disney-pixar-buzz-lightyear-1572027157.jpg",
+      "price": 100,
+      "discount": 30
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 2,
+        "name": "Car",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81lGCHQjZYL._SL1500_.jpg",
+        "price": 200,
+        "discount": 40
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Dorne",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+        "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+        "price": 100,
+        "discount": 40
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 4,
+        "name": "Tou Hourse",
+        "description": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41xo3skXrsL._SS600_.jpg",
+        "price": 400,
+        "discount": 40
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": "Robert",
+        "name": "1",
+        "description": "combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
+        "imageUrl": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572027183-best-kids-toys-disney-pixar-buzz-lightyear-1572027157.jpg",
+        "price": 100,
+        "discount": 30
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Dorne",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+        "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+        "price": 100,
+        "discount": 40
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Dorne",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+        "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+        "price": 100,
+        "discount": 40
+      },
+      "id": 6
+    },
+    {
+      "product": {
+        "id": 5,
+        "name": "Piano",
+        "description": "combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
+        "imageUrl": "https://sc01.alicdn.com/kf/HTB1BX9Ic50TMKJjSZFNq6y_1FXaU.jpg_350x350.jpg",
+        "price": 600,
+        "discount": 40
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Kitchen set",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "imageUrl": "https://5.imimg.com/data5/SU/CQ/MY-45782465/baby-kids-kitchen-toys-set-500x500.jpg",
+        "price": 300,
+        "discount": 40
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Car",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81lGCHQjZYL._SL1500_.jpg",
+        "price": 200,
+        "discount": 40
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Dorne",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+        "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+        "price": 100,
+        "discount": 40
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": 4,
+        "name": "Tou Hourse",
+        "description": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41xo3skXrsL._SS600_.jpg",
+        "price": 400,
+        "discount": 40
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": 4,
+        "name": "Tou Hourse",
+        "description": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41xo3skXrsL._SS600_.jpg",
+        "price": 400,
+        "discount": 40
+      },
+      "id": 12
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Dorne",
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even",
+        "imageUrl": "https://5.imimg.com/data5/RA/QM/KS/SELLER-24320811/baby-toys-500x500.jpg",
+        "price": 100,
+        "discount": 40
+      },
+      "id": 13
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
