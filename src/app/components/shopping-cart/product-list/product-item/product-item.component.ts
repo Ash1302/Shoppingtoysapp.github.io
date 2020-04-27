@@ -9,7 +9,8 @@ import { CartService } from 'src/app/services/cart.service'
   styleUrls: ['./product-item.component.scss']
 })
 export class ProductItemComponent implements OnInit{
-  
+ 
+
   @Input() productItem:Product
 
   constructor(
@@ -19,10 +20,14 @@ export class ProductItemComponent implements OnInit{
 
       ngOnInit(){}
 
-  handleAddToCart(){
-    this.CartService.addProductToCart(this.productItem).subscribe(() => {
-    this.msg.sendMsg(this.productItem)
-    })
+    handleAddToCart(){
+      this.CartService.addProductToCart(this.productItem).subscribe(() => {
+      this.msg.sendMsg(this.productItem)
+      })
+    }
+
   }
-}
+
+
+
 

@@ -1,12 +1,14 @@
+<!-- <input type="text" placeholder="search" [(ngModel)]="filtertext" /> -->
+
 <div class="sort-main">  
     <span class="title">Sort:</span>
- 
-     <a href="#">Price--High Low</a>
-     <a href="#">Price--Low High</a>
-     <a href="#">Discount</a>
- </div>
+     <a href="#" (click)="highTolow()">Price--High Low</a>
+     <a href="#" (click)="lowTohigh()">Price--Low High</a>
+     <a href="#" (click)="discount()">Discount</a>
+ </div><br><br>
 <div class="row">
-    <div class="col-lg-3 col-6" *ngFor="let product of productList">
+    <div class="col-lg-3 col-6" *ngFor="let product of productList | searchFilter: filtertext">
         <app-product-item [productItem]="product"></app-product-item>
     </div>
 </div>
+

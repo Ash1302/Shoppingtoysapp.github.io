@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { SearchService } from 'src/app/services/search.service';
+
 
 @Component ({
     selector: 'app-search',
@@ -6,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: [ './search.component.scss']
 })
 
-export class SearchComponent implements OnInit{
-    constructor(){
+export class SearchComponent{
+    filtertext:string;
+    constructor( private searchService:SearchService){
     }
 
-    ngOnInit() {
-
+    searchItem(){
+        this.searchService.sendProducts(this.filtertext);
     }
 }

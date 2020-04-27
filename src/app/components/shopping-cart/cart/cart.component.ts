@@ -41,11 +41,22 @@ export class CartComponent implements OnInit {
       this.calcCartTotal();
     })
   }
-
+  
   calcCartTotal(){
     this.cartTotal = 0
     this.cartItems.forEach(item => {
       this.cartTotal += (item.qty * item.price)
     })
   }
+
+   removeCartItem(id: number){
+  const i = this.cartItems.findIndex(e => e.id === id);
+    if( i>=0 ){
+      this.cartItems.splice(i, 1);
+      console.log(i);
+      }
+     
+  }
+
+  
 }

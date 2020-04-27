@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http'
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -16,7 +17,9 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component'
 import { ProductlistComponent} from './components/shopping-cart/product-list/product-list.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-
+import { Searchfilter } from './searchfilter.pipe';
+import { format } from 'url';
+import { importType } from '@angular/compiler/src/output/output_ast';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,12 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     ProductlistComponent,
     CartComponent,
     CartItemComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    Searchfilter
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],

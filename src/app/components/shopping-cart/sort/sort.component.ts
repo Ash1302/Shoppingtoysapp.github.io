@@ -10,7 +10,7 @@ import { Product } from 'src/app/models/product';
 })
 
 export class SortComponent implements OnInit{
-    price:number;
+    
 
     @Input() productItem:Product
 
@@ -18,13 +18,9 @@ export class SortComponent implements OnInit{
 
 
     constructor() {
-
-        // this.price = price
-
-        // const sortByPrice = this.productList.sort((a, b) => (a.price - b.price));
-        // console.log(sortByPrice + "ash");
+       
     }
-
+    
 
     ngOnInit(){
     }
