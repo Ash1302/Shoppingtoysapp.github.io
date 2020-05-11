@@ -20,6 +20,9 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { Searchfilter } from './searchfilter.pipe';
 import { format } from 'url';
 import { importType } from '@angular/compiler/src/output/output_ast';
+import { from } from 'rxjs';
+import { CartDetailsComponent } from './components/cart-details/cart-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -36,12 +39,17 @@ import { importType } from '@angular/compiler/src/output/output_ast';
     CartComponent,
     CartItemComponent,
     ProductItemComponent,
-    Searchfilter
+    Searchfilter,
+    CartDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ///RouterModule.forRoot(appRoutes),
+    AppRoutingModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

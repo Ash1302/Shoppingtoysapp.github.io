@@ -16,23 +16,21 @@ export class ProductlistComponent implements OnInit {
     //depdencacy injeaction
     constructor(private productServices: ProductService,
         private searchService: SearchService) {
-        
         this.searchService.filtertext$.subscribe(
             productList => {
                 this.filtertext = productList;
             });
-            
-    }
-
-  
+        }
 
     //life cyle hook
     ngOnInit() {
+    //this.productList = this.productServices.getProducts()
+    
+    //prodcutsservice in calling getprodcuts method and loading into productlist here
     this.productServices.getProducts().subscribe((products) => {
         this.productList = products;
      })
     }
-
 
     highTolow(){ 
         this.productList.sort((a, b) => (b.price - a.price));

@@ -1,9 +1,12 @@
+
 <div *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty</div>
 
 <ul *ngIf="cartItems.length > 0" class="list-group">
     <li class="list-group-item" *ngFor="let item of cartItems">
+     
       <app-cart-item [cartItem]="item"></app-cart-item>
-      <button class="btn btn-remove" (click)="removeCartItem(item.id)">X</button>
+      <!-- <button class="btn btn-remove" (click)="removeCartItem()">X</button> -->
+    <button class="btn btn-remove" (click)="removeCartItem(item.id)">X</button>
     </li>
     <li class="list-group-item active">
         <strong>Total: {{cartTotal | currency: 'INR'}}</strong>

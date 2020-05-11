@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
 import { productsUrl } from 'src/app/config/api'
-
 import { Product } from '../models/product';
 
 //const apiUrl = "http://localhost:3000/products";
@@ -13,6 +11,7 @@ import { Product } from '../models/product';
 })
 
 export class ProductService{
+    //array of prodcuts
     // productList: Product[] = [
     //  new Product(1,'Product 1', 'This is the product 1 description. The product is really cool!', 100, 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR608TWmLRWFNYPlY5xgKkgZPYe7mwv0GDMDtAS9nRdlVo4aytG'),
     //  new Product(2,'Product 2', 'This is the product 2 description. The product is really cool!', 200, 'https://cdn.dalvey.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/l/a/laptop_mouse--00795.jpg'),
@@ -28,11 +27,20 @@ export class ProductService{
     }
 
     // we created get method overhere this is nesscacrt for prduct list
-    
-    //we have to specify data type
+    // we have to specify retrun type
+    //we have to specify data type it can not return only array so we have added observale
     getProducts(): Observable<Product[]> {
-        //TODO: Populate prducts from an API and reurn an Observable
+        //TODO: Populate prducts from an API and return an Observable
         //return this.productList
           return this.http.get<Product[]>(productsUrl);
+          // so we have to give data type in return 
+         // this will give us obserabale
+        //but after giving in observale we have to declare in get method that product array
     }
+
+    //this was static
+    // getProducts(): Product[] {
+    //     //TODO: Populate products from an API and return an Observable
+    //     return this.productList
+    //   }
 }

@@ -16,17 +16,4 @@ export class CartItemComponent implements OnInit {
   ngOnInit() {
   }
 
-//   removeCartItem(obj: any){
-//     this.productItem = this.productItem.filter(item => item !== obj);
-//     console.log("ash");
-//  }
-
-  // removeCartItem(cartItem: any){
-  // const index: number = this.cartItems.indexOf(cartItem);
-  // this.cartItems.splice(index, 1);
-  // console.log("ash");
-  //  }
-
-
- 
 }

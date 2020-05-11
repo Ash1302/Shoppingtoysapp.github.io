@@ -7,7 +7,12 @@
      <a href="#" (click)="discount()">Discount</a>
  </div><br><br>
 <div class="row">
+    <!-- storing all productitem in product which is coming from productList and then passing that product to productItem as product -->
+    <!--  -->
     <div class="col-lg-3 col-6" *ngFor="let product of productList | searchFilter: filtertext">
+        <!-- here was we are sending one by one productItem to the list so biding the property productItem with product object  -->
+        <!-- here we want to send product obejct one by one here product will come and prodcut item will bind property dyanamic  -->
+        <!-- hetre  -->
         <app-product-item [productItem]="product"></app-product-item>
     </div>
 </div>
